@@ -4,6 +4,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,7 +15,24 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button btn1 = (Button) findViewById(R.id.button);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //インテントのインスタンス生成
+                Intent intent = new Intent(MainActivity.this, MainGame_Activity.class);
+                //次のアクティビティ起動
+                startActivity(intent);
+            }
+
+
+        });
+
+        
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
