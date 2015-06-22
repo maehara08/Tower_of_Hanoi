@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tower_of_Hanoi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_game_">MainGame_Activity</string>
+</resources>
