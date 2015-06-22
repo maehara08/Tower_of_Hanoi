@@ -4,4 +4,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main_game_">MainGame_Activity</string>
+    <string name="title_activity_main__rule">Main_Rule</string>
 </resources>

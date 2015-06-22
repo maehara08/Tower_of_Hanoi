@@ -29,7 +29,18 @@ public class MainActivity extends ActionBarActivity {
 
         });
 
-        
+
+
+        //ƒ‹[ƒ‹‚Ö‚Ì‘JˆÚ
+        Button btn2=(Button)findViewById(R.id.button2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,Main_Rule.class);
+
+                startActivity(intent);
+            }
+        });
     }
 
 

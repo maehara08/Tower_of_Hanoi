@@ -9,6 +9,17 @@
 
     <TextView android:text="ルール説明" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ruuuul" />
+        android:id="@+id/ruuuul"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1 .3本の柱と何枚かの円盤が用意されています。円盤の大きさは全て異なっています。\n\n2. 円盤の上にはその円盤より小さな円盤しか置くことが出来ません。 \n\n3. 最初に左の柱に全ての円盤が通されています。（2のルールから最上段が最も小さな円盤で、最下段が最も大きな円盤です。） \n\n4. 円盤は1度に1枚を柱から外すことができ、別の柱に通すことができます。 \n\n5. 最終的に左の柱以外のどちらかの柱に全ての円盤を通せばクリアです。"
+        android:id="@+id/textView2"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
