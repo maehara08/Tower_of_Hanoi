@@ -7,14 +7,142 @@
     tools:context="com.example.riku.tower_of_hanoi.MainGame_Activity"
     android:id="@+id/jn">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="23dp"
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/tumi1"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/tumi2"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/tumi3"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="23dp"
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/tumi1"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/tumi2"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/tumi3"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="23dp"
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/tumi1"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView11"
+                    android:src="@drawable/tumi2"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/tumi3"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="0dp"
         android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="297dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/stick1"
+            android:layout_weight="1"
+            android:paddingTop="70dp" />
 
         <ImageView
             android:layout_width="0dp"
@@ -26,25 +154,11 @@
             android:layout_marginRight="0dp"
             android:layout_marginEnd="297dp"
             android:layout_marginTop="0dp"
-            android:scaleType="fitCenter"
             android:src="@drawable/stick1"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView3"
-            android:layout_alignTop="@+id/linearLayout"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="0dp"
-            android:layout_marginEnd="297dp"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/stick1"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical" />
+            android:paddingTop="70dp"
+            android:scaleType="fitXY" />
 
         <ImageView
             android:layout_width="0dp"
@@ -57,17 +171,10 @@
             android:layout_marginEnd="297dp"
             android:layout_marginTop="0dp"
             android:src="@drawable/stick1"
-            android:scaleType="fitCenter"
-            android:layout_weight="1" />
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:paddingTop="70dp" />
 
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical">
-
-        </LinearLayout>
 
     </LinearLayout>
 
