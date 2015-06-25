@@ -19,36 +19,39 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="230dp"
                 android:layout_weight="1"
                 android:paddingLeft="0dp"
-                android:layout_marginTop="240dp"
-                android:weightSum="1">
+                android:layout_marginTop="220dp"
+                android:weightSum="1"
+                android:paddingTop="30dp">
 
                 <ImageView
-                    android:layout_width="55dp"
+                    android:layout_width="50dp"
                     android:layout_height="40dp"
                     android:id="@+id/imageView8"
                     android:src="@drawable/tumi1"
                     android:scaleType="centerCrop"
-                    android:layout_marginLeft="20dp" />
+                    android:layout_marginLeft="30dp"
+                    android:adjustViewBounds="true" />
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="40dp"
                     android:id="@+id/imageView7"
                     android:src="@drawable/tumi2"
                     android:scaleType="centerCrop"
-                    android:layout_weight="0.13"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp" />
+                    android:layout_marginLeft="23dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="top|left" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
                     android:id="@+id/imageView4"
                     android:src="@drawable/tumi3"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
 
             </LinearLayout>
 
@@ -60,13 +63,6 @@
                 android:paddingLeft="22dp"
                 android:layout_marginTop="190dp">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView5"
-                    android:src="@drawable/tumi3"
-                    android:layout_weight="1"
-                    android:scaleType="fitCenter" />
             </LinearLayout>
 
             <LinearLayout
@@ -77,13 +73,6 @@
                 android:paddingLeft="22dp"
                 android:layout_marginTop="190dp">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView6"
-                    android:src="@drawable/tumi3"
-                    android:layout_weight="1"
-                    android:scaleType="fitCenter" />
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
@@ -110,7 +99,8 @@
             android:layout_marginTop="0dp"
             android:src="@drawable/stick1"
             android:layout_weight="1"
-            android:paddingTop="70dp" />
+            android:paddingTop="70dp"
+            android:layout_marginLeft="10dp" />
 
         <ImageView
             android:layout_width="0dp"
