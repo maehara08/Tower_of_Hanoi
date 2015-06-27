@@ -1,48 +1,23 @@
 package com.example.riku.tower_of_hanoi;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 
-public class MainGame_Activity extends ActionBarActivity {
-    ImageView tumiki1;//積木１の画像
-    ImageView tumiki2;//積木２の画像
-    ImageView tumiki3;//積木3の画像
-
-
-
+public class select_activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_game_);
-        Button tu1= (Button) findViewById(R.id.tumi1);
-        tu1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //インテントのインスタンス生成
-                Intent intent = new Intent(MainGame_Activity.this,select_activity.class);
-                //次のアクティビティ起動
-                startActivity(intent);
-            }
-
-
-        });
-
-
-
+        setContentView(R.layout.activity_select_activity);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_game_, menu);
+        getMenuInflater().inflate(R.menu.menu_select_activity, menu);
         return true;
     }
 

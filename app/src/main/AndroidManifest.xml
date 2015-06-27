@@ -24,6 +24,10 @@
             android:name=".Main_Rule"
             android:label="@string/title_activity_main__rule" >
         </activity>
+        <activity
+            android:name=".select_activity"
+            android:label="@string/title_activity_select_activity" >
+        </activity>
     </application>
 
 </manifest>
