@@ -16,13 +16,20 @@ public class MainGame_Activity extends ActionBarActivity {
     ImageView tumiki0;//Ï–Ø‚P‚Ì‰æ‘œ
     ImageView tumiki1;//Ï–Ø‚Q‚Ì‰æ‘œ
     ImageView tumiki2;//Ï–Ø3‚Ì‰æ‘œ
+    ImageView tumiki3;
+    ImageView tumiki4;
     ImageView tumiki5;
+    ImageView tumiki6;
+    ImageView tumiki7;
+    ImageView tumiki8;
+    ImageView tumiki9;
+
 
     boolean[] tumicheck = new boolean[9];
 
-    boolean check1=false;
-    boolean check2=false;
-    boolean check3=false;
+    boolean treecheck1=false;
+    boolean treecheck2=false;
+    boolean treecheck3=false;
 
 
     @Override
@@ -42,7 +49,15 @@ public class MainGame_Activity extends ActionBarActivity {
 
         });*/
         tumiki0 = (ImageView) findViewById(R.id.tumi1);
+        tumiki1 = (ImageView) findViewById(R.id.tumi2);
+        tumiki2 = (ImageView) findViewById(R.id.tumi3);
+        tumiki3 = (ImageView) findViewById(R.id.tumi4);
+        tumiki4 = (ImageView) findViewById(R.id.tumi5);
         tumiki5 = (ImageView) findViewById(R.id.tumi6);
+        tumiki6 = (ImageView) findViewById(R.id.tumi7);
+        tumiki7 = (ImageView) findViewById(R.id.tumi8);
+        tumiki8 = (ImageView) findViewById(R.id.tumi9);
+
         for(int i = 0;i < 9;i++){
             if(i<3) tumicheck[i] = true;
             else tumicheck[i] = false;
@@ -51,13 +66,21 @@ public class MainGame_Activity extends ActionBarActivity {
 
     }
 
-    public void tumi1(View v){
-        check1 = true;
+    public void tree1(View v){
+        if (treecheck1==false){
+
+
+            treecheck1=true;
+
+
+        }
 
     }
-    public void tumi2(View v){
-        if(check2==false){
-            if(check1 == true){
+    public void tree2(View v){
+        //‚Q‰ñ–Ú‚Å‚Q–Ø‚ªƒ^ƒbƒv‚³‚ê‚½
+        if(treecheck2==false){
+            //–Ø‚P‚ªƒ^ƒbƒv‚³‚ê‚Ä‚é
+            if(treecheck1 == true){
                 if(tumicheck[0] = true){
                     if(tumicheck[5] == false) {
                         tumicheck[0] = false;
@@ -71,11 +94,25 @@ public class MainGame_Activity extends ActionBarActivity {
                 }else if(tumicheck[1]){
 
                 }
-            }else if(check3 == true){
-
             }
+        }else{
+
+
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
