@@ -13,9 +13,9 @@ import android.widget.ImageView;
 
 public class MainGame_Activity extends ActionBarActivity {
 
-    ImageView tumiki0;//Ï–Ø‚P‚Ì‰æ‘œ
-    ImageView tumiki1;//Ï–Ø‚Q‚Ì‰æ‘œ
-    ImageView tumiki2;//Ï–Ø3‚Ì‰æ‘œ
+    ImageView tumiki0;//ç©æœ¨ï¼‘
+    ImageView tumiki1;
+    ImageView tumiki2;
     ImageView tumiki3;
     ImageView tumiki4;
     ImageView tumiki5;
@@ -40,10 +40,10 @@ public class MainGame_Activity extends ActionBarActivity {
         tu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //ƒCƒ“ƒeƒ“ƒg‚ÌƒCƒ“ƒXƒ^ƒ“ƒX¶¬
+
                 Intent intent = new Intent(this,select_activity.class);
-                //Ÿ‚ÌƒAƒNƒeƒBƒrƒeƒB‹N“®
-                startActivity(intent);
+
+
             }
 
 
@@ -70,16 +70,97 @@ public class MainGame_Activity extends ActionBarActivity {
         if (treecheck1==false){
 
 
-            treecheck1=true;
+
+            //ï¼’ã‹ã‚‰1ã¸ç§»å‹•ã•ã›ã‚‹
+            if(treecheck2=true){
 
 
+
+                //ä¸€ç•ªä¸Šã¯ã©ã‚Œï¼Ÿ
+                if (tumicheck[3]=true){
+
+                    //ï¼‘ã®ç©ºã„ã¦ã‚‹å ´æ‰€ã‚’æ¢ã—ã¦ã„ã
+                    if (tumicheck[2]=false){
+                        tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumi1);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;
+
+
+
+
+                    }else if (tumicheck[1]=false){
+                        tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageResource(R.drawable.tumi1);
+                        tumiki1.setVisibility(View.VISIBLE);
+                        tumicheck[1]=true;
+
+
+                    }else if (tumicheck[0]=false){
+                        tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageResource(R.drawable.tumi1);
+                        tumiki0.setVisibility(View.VISIBLE);
+                        tumicheck[0]=true;
+
+                    }
+
+
+                }
+                else if (tumicheck[4]=true){
+
+                }else if (tumicheck[5]=true){
+
+                }else {
+                    //ç§»å‹•ã›ã›ã‚‹ç©æœ¨ãŒãªã„
+
+                }
+
+
+            }else if (treecheck3=true){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }else {
+                treecheck1=true;
+            }
+
+
+
+
+
+        }else{
+            treecheck1=false;
         }
+
+
+
+
+
+
+
+
 
     }
     public void tree2(View v){
-        //‚Q‰ñ–Ú‚Å‚Q–Ø‚ªƒ^ƒbƒv‚³‚ê‚½
+
         if(treecheck2==false){
-            //–Ø‚P‚ªƒ^ƒbƒv‚³‚ê‚Ä‚é
+
             if(treecheck1 == true){
                 if(tumicheck[0] = true){
                     if(tumicheck[5] == false) {
