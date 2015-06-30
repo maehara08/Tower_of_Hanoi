@@ -25,6 +25,8 @@ public class MainGame_Activity extends ActionBarActivity {
     ImageView tumiki9;
 
 
+
+
     boolean[] tumicheck = new boolean[9];
 
     boolean treecheck1=false;
@@ -67,51 +69,45 @@ public class MainGame_Activity extends ActionBarActivity {
     }
 
     public void tree1(View v){
+
+
         if (treecheck1==false){
 
 
 
             //２から1へ移動させる
-            if(treecheck2=true){
-
-
-
+            if(treecheck2==true){
                 //一番上はどれ？
-                if (tumicheck[3]=true){
+                if (tumicheck[3]==true){
 
                     //１の空いてる場所を探していく
-                    if (tumicheck[2]=false){
+                    if (tumicheck[2]==false){
                         tumicheck[3]=false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki2.setImageResource(R.drawable.tumi1);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
                         tumiki2.setVisibility(View.VISIBLE);
                         tumicheck[2]=true;
 
-
-
-
-                    }else if (tumicheck[1]=false){
+                    }else if (tumicheck[1]==false){
                         tumicheck[3]=false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki1.setImageResource(R.drawable.tumi1);
+                        tumiki1.setImageResource(R.drawable.tumiki111);
                         tumiki1.setVisibility(View.VISIBLE);
                         tumicheck[1]=true;
 
-
-                    }else if (tumicheck[0]=false){
+                    }else if (tumicheck[0]==false){
                         tumicheck[3]=false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki0.setImageResource(R.drawable.tumi1);
+                        tumiki0.setImageResource(R.drawable.tumiki111);
                         tumiki0.setVisibility(View.VISIBLE);
                         tumicheck[0]=true;
-
                     }
 
 
-                }
-                else if (tumicheck[4]=true){
 
-                }else if (tumicheck[5]=true){
+                }else if (tumicheck[4]==true){
+
+                }else if (tumicheck[5]==true){
 
                 }else {
                     //移動せせる積木がない
@@ -119,30 +115,14 @@ public class MainGame_Activity extends ActionBarActivity {
                 }
 
 
-            }else if (treecheck3=true){
+            }else if (treecheck3==true){
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }else {
+            } else {
                 treecheck1=true;
+
+
             }
-
-
-
-
 
         }else{
             treecheck1=false;
@@ -166,9 +146,17 @@ public class MainGame_Activity extends ActionBarActivity {
                     if(tumicheck[5] == false) {
                         tumicheck[0] = false;
                         tumiki0.setVisibility(View.INVISIBLE);
-                        tumiki5.setImageResource(R.drawable.tumi1);
+                        /*tumiki5.setImageResource(R.drawable.tumi1);*/
+                        tumiki5.setImageDrawable(tumiki0.getDrawable());
                         tumiki5.setVisibility(View.VISIBLE);
+
+
+                        /*int x =(Integer) tumiki0.getTag();
+                        tumiki5.setTag(new Integer(x));*/
+
+
                         tumicheck[5] = true;
+
                     }else if(tumicheck[6] == false){
 
                     }

@@ -20,9 +20,9 @@ public class MainActivity extends ActionBarActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //ƒCƒ“ƒeƒ“ƒg‚ÌƒCƒ“ƒXƒ^ƒ“ƒX¶¬
+
                 Intent intent = new Intent(MainActivity.this, MainGame_Activity.class);
-                //Ÿ‚ÌƒAƒNƒeƒBƒrƒeƒB‹N“®
+                //ï¿½ï¿½ï¿½ÌƒAï¿½Nï¿½eï¿½Bï¿½rï¿½eï¿½Bï¿½Nï¿½ï¿½
                 startActivity(intent);
             }
 
@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-        //ƒ‹[ƒ‹‚Ö‚Ì‘JˆÚ
+        //ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Ö‚Ì‘Jï¿½ï¿½
         Button btn2=(Button)findViewById(R.id.button2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
