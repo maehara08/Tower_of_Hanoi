@@ -23,6 +23,10 @@ public class MainGame_Activity extends ActionBarActivity {
     ImageView tumiki7;
     ImageView tumiki8;
     ImageView tumiki9;
+    ImageView tr1;
+    ImageView tr2;
+    ImageView tr3;
+
 
 
 
@@ -60,6 +64,7 @@ public class MainGame_Activity extends ActionBarActivity {
         tumiki7 = (ImageView) findViewById(R.id.tumi8);
         tumiki8 = (ImageView) findViewById(R.id.tumi9);
 
+
         for(int i = 0;i < 9;i++){
             if(i<3) tumicheck[i] = true;
             else tumicheck[i] = false;
@@ -82,40 +87,302 @@ public class MainGame_Activity extends ActionBarActivity {
 
                     //１の空いてる場所を探していく
                     if (tumicheck[2]==false){
-                        tumicheck[3]=false;
+
+                        tumicheck[3] = false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setImageDrawable(tumiki3.getDrawable());
                         tumiki2.setVisibility(View.VISIBLE);
-                        tumicheck[2]=true;
+
+                        tumicheck[2] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
 
                     }else if (tumicheck[1]==false){
-                        tumicheck[3]=false;
+                        tumicheck[3] = false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki1.setImageResource(R.drawable.tumiki111);
+                        tumiki1.setImageDrawable(tumiki3.getDrawable());
                         tumiki1.setVisibility(View.VISIBLE);
-                        tumicheck[1]=true;
+
+                        tumicheck[1] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
 
                     }else if (tumicheck[0]==false){
-                        tumicheck[3]=false;
+                        tumicheck[3] = false;
                         tumiki3.setVisibility(View.INVISIBLE);
-                        tumiki0.setImageResource(R.drawable.tumiki111);
+                        tumiki0.setImageDrawable(tumiki3.getDrawable());
                         tumiki0.setVisibility(View.VISIBLE);
-                        tumicheck[0]=true;
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
                     }
 
 
 
                 }else if (tumicheck[4]==true){
+                    //１の空いてる場所を探していく
+                    if (tumicheck[2]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageDrawable(tumiki4.getDrawable());
+                        tumiki2.setVisibility(View.VISIBLE);
+
+                        tumicheck[2] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[1]==false){
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageDrawable(tumiki4.getDrawable());
+                        tumiki1.setVisibility(View.VISIBLE);
+
+                        tumicheck[1] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[0]==false){
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageDrawable(tumiki4.getDrawable());
+                        tumiki0.setVisibility(View.VISIBLE);
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
 
                 }else if (tumicheck[5]==true){
 
+                    //１の空いてる場所を探していく
+                    if (tumicheck[2]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageDrawable(tumiki5.getDrawable());
+                        tumiki2.setVisibility(View.VISIBLE);
+
+                        tumicheck[2] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[1]==false){
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageDrawable(tumiki5.getDrawable());
+                        tumiki1.setVisibility(View.VISIBLE);
+
+                        tumicheck[1] = true;
+
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[0]==false){
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageDrawable(tumiki5.getDrawable());
+                        tumiki0.setVisibility(View.VISIBLE);
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
                 }else {
+                    treecheck1=false;
+                    treecheck2=false;
+                    treecheck3=false;
                     //移動せせる積木がない
 
                 }
 
 
+
+                //3から１へ
             }else if (treecheck3==true){
+                //一番上はどれ？
+                if (tumicheck[6]==true){
+
+                    //3の空いてる場所を探していく
+                    if (tumicheck[2]==false){
+
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageDrawable(tumiki6.getDrawable());
+                        tumiki2.setVisibility(View.VISIBLE);
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                        tumicheck[2] = true;
+
+
+
+
+                    }else if (tumicheck[1]==false){
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageDrawable(tumiki6.getDrawable());
+                        tumiki1.setVisibility(View.VISIBLE);
+
+                        tumicheck[1] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[0]==false){
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageDrawable(tumiki6.getDrawable());
+                        tumiki0.setVisibility(View.VISIBLE);
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+
+
+                }else if (tumicheck[7]==true){
+                    //3の空いてる場所を探していく
+                    if (tumicheck[2]==false){
+
+
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageDrawable(tumiki7.getDrawable());
+                        tumiki2.setVisibility(View.VISIBLE);
+
+                        tumicheck[2] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[1]==false){
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageDrawable(tumiki7.getDrawable());
+                        tumiki1.setVisibility(View.VISIBLE);
+
+                        tumicheck[1] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[0]==false){
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageDrawable(tumiki7.getDrawable());
+                        tumiki0.setVisibility(View.VISIBLE);
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }
+
+                }else if (tumicheck[8]==true){
+
+                    //１の空いてる場所を探していく
+                    if (tumicheck[2]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageDrawable(tumiki8.getDrawable());
+                        tumiki2.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[1]==false){
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki1.setImageDrawable(tumiki8.getDrawable());
+                        tumiki1.setVisibility(View.VISIBLE);
+
+                        tumicheck[1] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+                    }else if (tumicheck[0]==false){
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki0.setImageDrawable(tumiki8.getDrawable());
+                        tumiki0.setVisibility(View.VISIBLE);
+
+                        tumicheck[0] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+                    }
+
+                }else {
+                    //移動せせる積木がない
+
+                }
 
 
             } else {
@@ -140,36 +407,562 @@ public class MainGame_Activity extends ActionBarActivity {
     public void tree2(View v){
 
         if(treecheck2==false){
-
+            //1から２へ
             if(treecheck1 == true){
-                if(tumicheck[0] = true){
+                if(tumicheck[0] == true){
                     if(tumicheck[5] == false) {
                         tumicheck[0] = false;
                         tumiki0.setVisibility(View.INVISIBLE);
-                        /*tumiki5.setImageResource(R.drawable.tumi1);*/
                         tumiki5.setImageDrawable(tumiki0.getDrawable());
                         tumiki5.setVisibility(View.VISIBLE);
-
-
-                        /*int x =(Integer) tumiki0.getTag();
-                        tumiki5.setTag(new Integer(x));*/
-
-
                         tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
 
-                    }else if(tumicheck[6] == false){
+                    }else if(tumicheck[4] == false){
+                        tumicheck[0] = false;
+                        tumiki0.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki0.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[0] = false;
+                        tumiki0.setVisibility(View.INVISIBLE);
+                        tumiki3.setImageDrawable(tumiki0.getDrawable());
+                        tumiki3.setVisibility(View.VISIBLE);
+                        tumicheck[3] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
 
                     }
-                }else if(tumicheck[1]){
+                }else if(tumicheck[1]==true){
+                    if(tumicheck[5] == false) {
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki5.setImageDrawable(tumiki1.getDrawable());
+                        tumiki5.setVisibility(View.VISIBLE);
+                        tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if(tumicheck[4] == false){
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki1.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki3.setImageDrawable(tumiki1.getDrawable());
+                        tumiki3.setVisibility(View.VISIBLE);
+                        tumicheck[3] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+
+                }else if (tumicheck[2]==true){
+                    if(tumicheck[5] == false) {
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki5.setImageDrawable(tumiki2.getDrawable());
+                        tumiki5.setVisibility(View.VISIBLE);
+                        tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if(tumicheck[4] == false){
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki2.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki3.setImageDrawable(tumiki2.getDrawable());
+                        tumiki3.setVisibility(View.VISIBLE);
+                        tumicheck[3] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
 
                 }
+                //3から2へ
+            }else if (treecheck3==true){
+                if (tumicheck[6]==true){
+                    if (tumicheck[5]==false){
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki5.setImageDrawable(tumiki6.getDrawable());
+                        tumiki5.setVisibility(View.VISIBLE);
+                        tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+                    }else if (tumicheck[4]==false){
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki6.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[6] = false;
+                        tumiki6.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki6.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }
+                else if (tumicheck[7]==true){
+                    if (tumicheck[5]==false){
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki5.setImageDrawable(tumiki7.getDrawable());
+                        tumiki5.setVisibility(View.VISIBLE);
+                        tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+                    }else if (tumicheck[4]==false){
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki7.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[7] = false;
+                        tumiki7.setVisibility(View.INVISIBLE);
+                        tumiki3.setImageDrawable(tumiki7.getDrawable());
+                        tumiki3.setVisibility(View.VISIBLE);
+                        tumicheck[3] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }
+                else if (tumicheck[8]==true){
+                    if (tumicheck[5]==false){
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki5.setImageDrawable(tumiki8.getDrawable());
+                        tumiki5.setVisibility(View.VISIBLE);
+                        tumicheck[5] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[4]==false){
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki4.setImageDrawable(tumiki8.getDrawable());
+                        tumiki4.setVisibility(View.VISIBLE);
+                        tumicheck[4] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }else if (tumicheck[3]==false){
+                        tumicheck[8] = false;
+                        tumiki8.setVisibility(View.INVISIBLE);
+                        tumiki3.setImageDrawable(tumiki8.getDrawable());
+                        tumiki3.setVisibility(View.VISIBLE);
+                        tumicheck[3] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }
+
+            }else{
+                treecheck2=true;
+
             }
         }else{
+            treecheck2=false;
 
 
         }
     }
 
+    public void tree3(View v){
+        if (treecheck3==false){
+
+
+
+            //1から3へ移動させる
+            if(treecheck1==true){
+                //一番上はどれ？
+                if (tumicheck[0]==true){
+
+                    //3の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+
+                        tumicheck[0]= false;
+                        tumiki0.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki0.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[0] = false;
+                        tumiki0.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki0.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[0] = false;
+                        tumiki0.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki0.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+
+
+                }else if (tumicheck[1]==true){
+                    //3の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki1.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki1.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[1] = false;
+                        tumiki1.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki1.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }else if (tumicheck[2]==true){
+
+                    //１の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki2.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki2.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[2] = false;
+                        tumiki2.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki2.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }else {
+                    treecheck1=false;
+                    treecheck2=false;
+                    treecheck3=false;
+                    //移動せせる積木がない
+
+                }
+
+
+
+                //2から3へ移動させる
+            }else if (treecheck2==true){
+                //一番上はどれ？
+                if (tumicheck[3]==true){
+
+                    //3の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+
+                        tumicheck[3] = false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki3.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                        tumicheck[8] = true;
+
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[3] = false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki3.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[3] = false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki3.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+
+
+                }else if (tumicheck[4]==true){
+                    //3の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki4.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki4.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[4] = false;
+                        tumiki4.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki4.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }else if (tumicheck[5]==true){
+
+                    //１の空いてる場所を探していく
+                    if (tumicheck[8]==false){
+                       /* tumicheck[3]=false;
+                        tumiki3.setVisibility(View.INVISIBLE);
+                        tumiki2.setImageResource(R.drawable.tumiki111);
+                        tumiki2.setVisibility(View.VISIBLE);
+                        tumicheck[2]=true;*/
+
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki8.setImageDrawable(tumiki5.getDrawable());
+                        tumiki8.setVisibility(View.VISIBLE);
+
+                        tumicheck[8] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+
+
+                    }else if (tumicheck[7]==false){
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki7.setImageDrawable(tumiki5.getDrawable());
+                        tumiki7.setVisibility(View.VISIBLE);
+
+                        tumicheck[7] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+
+                    }else if (tumicheck[6]==false){
+                        tumicheck[5] = false;
+                        tumiki5.setVisibility(View.INVISIBLE);
+                        tumiki6.setImageDrawable(tumiki5.getDrawable());
+                        tumiki6.setVisibility(View.VISIBLE);
+
+                        tumicheck[6] = true;
+                        treecheck1=false;
+                        treecheck2=false;
+                        treecheck3=false;
+
+                    }
+
+                }else {
+                    //移動せせる積木がない
+
+                }
+
+
+            } else {
+                treecheck3=true;
+
+
+            }
+
+        }else{
+            treecheck3=false;
+        }
+
+
+    }
+
+    public void treeimage1(View v){
+        if (treecheck1==true){
+            tr1.setVisibility(View.VISIBLE);
+
+
+        }
+        else{
+            tr1.setVisibility(View.INVISIBLE);
+        }
+    }
 
 
 
